@@ -1,13 +1,13 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>Declarative</ion-title>
+    <ion-title>Imperative</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-searchbar [formControl]="searchField" debounce="100"></ion-searchbar>
   <ion-list>
-    <ion-item *ngFor="let client of filteredClients$ | async">
+    <ion-item *ngFor="let client of filteredClients">
       {{client.firstName}} {{client.lastName}}
     </ion-item>
   </ion-list>
